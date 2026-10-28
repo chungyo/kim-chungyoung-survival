@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#16131c">
+  <title>김충영 서바이벌</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri@2.40.3/dist/galmuri.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud" hidden>
+    <div class="xp"><div class="xp-fill" id="xp-fill"></div><span class="lv" id="lv">Lv 1</span></div>
+    <div class="hud-row">
+      <div class="age-box">
+        <div class="age"><span id="age">어린 시절</span></div>
+        <div class="era-name" id="era-name"></div>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+    <div class="weapons" id="weapons"></div>
+  </div>
+
+  <button id="pause-btn" class="pause-btn" hidden aria-label="일시정지"><i></i><i></i></button>
+  <div id="bossbar" class="bossbar" hidden><div class="boss-name" id="boss-name"></div><div class="boss-track"><i id="boss-fill"></i></div></div>
+  <div id="toast" class="toast" hidden></div>
+  <div id="joystick" hidden><div class="knob"></div></div>
+  <div id="overlay" class="overlay" hidden></div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
