@@ -31,14 +31,6 @@ python3 serve.py . 5180
 
 영상 파일은 `assets/chungyoung-ending.mp4`입니다. AI 생성 일러스트는 `assets/ending/`에 보관하고, 배경 음악은 `scripts/create-ending.py`에서 합성했습니다. 영상 재생에 별도 설치는 필요하지 않으며, 영상 재생성에는 ffmpeg, Python NumPy와 macOS의 Apple SD Gothic Neo 글꼴이 필요합니다.
 
-## 출처와 분석
-
-[이상민 서바이벌](https://github.com/PLAF-2/midterm-sangmin)의 Canvas 게임을 기반으로 제작자의 대화상 재사용 허락을 받았습니다. 게임 진행과 일부 효과·보스 탄·음악은 원작을 활용합니다. 다섯 시대의 맵·캐릭터·적·보스·무기 아이콘은 새 코드 도트이며 표지는 생성 이미지입니다. 기반 버전은 `386d724a03b8b420c85afbbf19927b23d42860b6`입니다.
-
-게임은 외부 CDN의 [Galmuri 글꼴](https://github.com/quiple/galmuri)을 불러오며, 인터넷 연결이 없으면 대체 글꼴이 표시될 수 있습니다. 공개 배포 전에는 글꼴 등 제3자 자산의 사용 조건을 별도로 확인하세요.
-
-[REA](https://github.com/morluto/rea) `rea-agents` 6.8.0으로 JavaScript 정적 분석을 시도했습니다. 파일 목록 수집은 진행됐지만, macOS에서 Xcode 사용권 계약 미동의로 보조 도구 컴파일이 실패해 분석은 완료되지 않았습니다. 실행한 Node.js v22.23.1도 패키지의 명시된 요구 버전보다 낮았습니다. 나머지 구조는 원본 코드를 직접 확인했습니다.
-
 ## 검증
 
 ```bash
